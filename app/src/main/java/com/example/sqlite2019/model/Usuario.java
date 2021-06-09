@@ -1,4 +1,4 @@
-package com.example.sqlite2019;
+package com.example.sqlite2019.model;
 
 public class Usuario {
     private Integer _id;

@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.sqlite2019.dao.UsuarioDao;
+import com.example.sqlite2019.util.Mensajes;
+
 public class MainActivity extends AppCompatActivity {
     private EditText edtUsuario, edtClave;
     private UsuarioDao usuarioDAO;
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if(valida){
             if(usuarioDAO.logueoUser(usuario, clave)){
-                startActivity(new Intent(this, PrincipalActivity.class));
+                startActivity(new Intent(this, ListUsuarioActivity.class));
                 finish();
             }else{
                 Mensajes.Msg(this,getString(R.string.msg_login_incorrecto));

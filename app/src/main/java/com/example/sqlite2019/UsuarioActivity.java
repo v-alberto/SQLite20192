@@ -8,6 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import com.example.sqlite2019.dao.UsuarioDao;
+import com.example.sqlite2019.model.Usuario;
+import com.example.sqlite2019.util.Mensajes;
+
 public class UsuarioActivity extends AppCompatActivity {
     private EditText edtNombre, edtUser, edtClave;
     private UsuarioDao usuarioDAO;
@@ -66,11 +70,13 @@ public class UsuarioActivity extends AppCompatActivity {
             if(resultado != -1){
                 if(iduser > 0) {
                     Mensajes.Msg(this, getString(R.string.msg_user_modificado));
+                    startActivity(new Intent(this, ListUsuarioActivity.class));
                 }else{
                     Mensajes.Msg(this, getString(R.string.msg_user_guardado));
+                    startActivity(new Intent(this, ListUsuarioActivity.class));
                 }
                 finish();
-                startActivity(new Intent(this, MainActivity.class));
+                //startActivity(new Intent(this, MainActivity.class));
             }else{
                 Mensajes.Msg(this, getString(R.string.msg_user_error));
             }

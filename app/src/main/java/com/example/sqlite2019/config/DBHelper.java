@@ -1,14 +1,14 @@
-package com.example.sqlite2019;
+package com.example.sqlite2019.config;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by DReyna on 18/05/2015.
+ * Created by DReyna on 18/12/2020.
  */
 public class DBHelper extends SQLiteOpenHelper {
-    private static final String DB_NAME  = "DBprueba";
+    private static final String DB_NAME  = "DB2020";
     private static final int DB_VERSION = 1;
     public DBHelper(Context context){
         super(context,DB_NAME, null, DB_VERSION);

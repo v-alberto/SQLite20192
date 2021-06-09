@@ -1,4 +1,4 @@
-package com.example.sqlite2019;
+package com.example.sqlite2019.util;
 
 import android.app.Activity;
 
@@ -8,7 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 
 /**
- * Created by DReyna on 18/05/2015.
+ * Created by DReyna on 18/12/2020.
  */
 public class Mensajes {
     public static void Msg(Activity activity, String msg){

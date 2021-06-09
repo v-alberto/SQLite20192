@@ -1,4 +1,4 @@
-package com.example.sqlite2019;
+package com.example.sqlite2019.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.sqlite2019.R;
+import com.example.sqlite2019.model.Usuario;
 
 import java.util.List;
 
@@ -40,7 +43,8 @@ public class UsuarioAdapter extends BaseAdapter {
             view = inflater.inflate(R.layout.usuarios, null);
         }
         TextView txtNom = (TextView) view.findViewById(R.id.usuario_lista_nombre);
-        txtNom.setText(usuario.getNombres());
+        txtNom.setText((i+1)+".- "+usuario.getNombres());
+
         return view;
     }
 }

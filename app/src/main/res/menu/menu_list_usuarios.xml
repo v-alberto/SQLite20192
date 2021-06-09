@@ -5,4 +5,7 @@
     <item android:id="@+id/action_menu_guardar"
           android:title="@string/nuevo_user"
          android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_menu_salir1"
+        android:title="@string/salir"
+        android:orderInCategory="100" app:showAsAction="never" />
 </menu>

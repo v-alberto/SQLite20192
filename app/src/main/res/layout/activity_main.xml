@@ -8,7 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="#069587"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp"/>
         <TextView
             android:text="@string/Login_txtUsuario"
             android:layout_width="wrap_content"
@@ -18,6 +26,9 @@
             android:id="@+id/edt_Usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_user"
+            android:background="@drawable/caja"
+            android:padding="5dp"
             android:layout_marginBottom="10dp"/>
         <TextView
             android:text="@string/Login_txtClave"
@@ -29,15 +40,19 @@
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="30dp"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key"
+            android:background="@drawable/caja"/>
         <Button
             android:id="@+id/login_btnEntrar"
             android:text="@string/Login_btnEntrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#333"
+            android:background="@drawable/boton"
             android:textColor="#FFF"
             android:textStyle="bold"
-            android:onClick="logueo" />
+            android:onClick="logueo"
+            />
     </LinearLayout>
 </ScrollView>

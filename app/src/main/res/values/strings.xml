@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SQLite2019</string>
+    <string name="app_name">App Usuarios</string>
     <string name="action_menu_user">Opciones</string>
     <string name="title_activity_login">Autentificación</string>
     <string name="guardar">Guardar</string>

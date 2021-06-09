@@ -13,6 +13,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.sqlite2019.adapter.UsuarioAdapter;
+import com.example.sqlite2019.dao.UsuarioDao;
+import com.example.sqlite2019.model.Usuario;
+import com.example.sqlite2019.util.Mensajes;
+
 import java.util.List;
 
 public class ListUsuarioActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, DialogInterface.OnClickListener{
@@ -57,6 +62,9 @@ public class ListUsuarioActivity extends AppCompatActivity implements AdapterVie
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_menu_guardar) {
             startActivity(new Intent(this, UsuarioActivity.class));
+        }
+        if(id==R.id.action_menu_salir1){
+            finish();
         }
 
         return super.onOptionsItemSelected(item);

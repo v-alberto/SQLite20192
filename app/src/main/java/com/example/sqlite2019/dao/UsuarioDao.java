@@ -1,9 +1,12 @@
-package com.example.sqlite2019;
+package com.example.sqlite2019.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.example.sqlite2019.config.DBHelper;
+import com.example.sqlite2019.model.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;
