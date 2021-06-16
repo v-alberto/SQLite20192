@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if(valida){
             if(usuarioDAO.logueoUser(usuario, clave)){
-                startActivity(new Intent(this, ListUsuarioActivity.class));
+                startActivity(new Intent(this, ListAlumnoActivity.class));
                 finish();
             }else{
                 Mensajes.Msg(this,getString(R.string.msg_login_incorrecto));

@@ -17,7 +17,9 @@
 
     <!-- validacion -->
     <string name="Login_validaUsuario">Usuario Obligatorio</string>
+    <string name="Login_validaAlumno">Código Obligatorio</string>
     <string name="Login_validaClave">Clave Obligatorio</string>
+    <string name="Login_validaCorreo">Correo Obligatorio</string>
     <string name="Login_validaNombre">Nombre Obligatorio</string>
 
     <!-- Mensajes -->
